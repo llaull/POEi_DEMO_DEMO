@@ -20,8 +20,8 @@
 	<p>
 		<label for="r">taille ?</label>
 		<input type="radio" name="r" value="1" checked="checked" />Petite
-		<input type="radio" name="r" value="2" checked="checked" />moyenne
-		<input type="radio" name="r" value="3" checked="checked" />grande
+		<input type="radio" name="r" value="2"/>moyenne
+		<input type="radio" name="r" value="3"/>grande
 	</p>
 	<p>
 		<label for="ingredients">ingredients ?</label>
