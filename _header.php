@@ -4,6 +4,7 @@
 <title>demo PiHiPi</title>
 <link rel="stylesheet" href="css/normalize.css"/>
 <link rel="stylesheet" href="css/default.css"/>
+<script src="js/form.js"></script>
 </head>
 <body>
 <div class="content">

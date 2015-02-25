@@ -2,7 +2,8 @@
 /**
 */
 ?>
-<form method="POST" action="" id="MyForm">
+<div class="log"></div>
+<form method="POST" action="" name="MyForm" id="MyForm">
 <fieldset>
 	<legend>text</legend>
 	<p>
@@ -17,19 +18,19 @@
 <fieldset>
 	<legend>radio/checkbox</legend>
 	<p>
-		<label for="r">choix ?</label>
+		<label for="r">taille ?</label>
 		<input type="radio" name="r" value="1" checked="checked" />Petite
 		<input type="radio" name="r" value="2" checked="checked" />moyenne
 		<input type="radio" name="r" value="3" checked="checked" />grande
 	</p>
 	<p>
-		<label for="r">choix ?</label>
+		<label for="ingredients">ingredients ?</label>
 		<input type="checkbox" name="ingredients[]" value="1" checked="checked" />oeuf
 		<input type="checkbox" name="ingredients[]" value="2"/>tomate
 		<input type="checkbox" name="ingredients[]" value="3"/>fromage
 	</p>
 	<p>
-		<label for="r">choix ?</label>
+		<label for="paiement">paiement ?</label>
 		<select name="paiement">
 			<option value="-1">...svp...</option>
 			<option value="0">CB</option>
@@ -40,7 +41,7 @@
 <fieldset>
 	<legend>select</legend>
 	<p>
-		<label for="r">multi choix ?</label>
+		<label for="multiple">multi choix ?</label>
 		<select name="style" size="4" multiple="multiple">
 			<option value="-1">...svp...</option>
 			<option value="0">sauvage</option>
