@@ -71,3 +71,8 @@ footer{
 	border-radius: 20px 20px 20px 20px ;
 
 }
+
+div#result{
+	background-color: black;
+	color: white;
+}
