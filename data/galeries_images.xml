@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<images>
+	<image categorie="1" id_image="3">
+		<fichier>losangeles.jpg</fichier>
+		<legende>Un concept à part ! Une légende en soi. Les gens détestent at aiment en même temps ...</legende>
+	</image>
+	<image categorie="1" id_image="4">
+		<fichier>newyork.jpg</fichier>
+		<legende>La ville la plus connue du monde.</legende>
+	</image>
+	<image categorie="1" id_image="5">
+		<fichier>paris.jpg</fichier>
+		<legende>La ville la plus connue (avec New-York), la plus aimée, la plus visitée et la plus belle du monde.</legende>
+	</image>
+	<image categorie="2" id_image="6">
+		<fichier>Sahara.jpg</fichier>
+		<legende>Le plus grand désert du monde.</legende>
+	</image>
+</images>

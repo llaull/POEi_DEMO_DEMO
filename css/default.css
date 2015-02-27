@@ -52,10 +52,9 @@ section{
 	padding: 10px;
 	margin-top:10px;
 }
-section:first-letter {
+.letterine:first-letter {
 	color: red;
 	font-size: 50px;
-	float:;
 	vertical-align: top;
 	}
 section.gauche { width: 660px; background-color: #cccccc; margin-left: 10px;}
