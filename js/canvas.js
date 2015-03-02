@@ -5,6 +5,7 @@ var canvas, context;
 var CW, CH;
 
 var x = 0;
+var j = 0;
 
 function init(){
 	console.log('init loaded');
@@ -23,10 +24,10 @@ function init(){
 	CW = canvas.height;
 	CH = canvas.width;
 
-	// action();
-	damier();
+	//damier();
+	action();
 
-
+	goRond();
 	//appel l'animation pourrri
 	//setInterval("b()", 20);
 }
@@ -37,6 +38,48 @@ function action(){
 	myLine(CW/2 ,0, CW/2, CH, "#E52325");
 }
 
+function goRect(){
+
+	console.log('goRect');
+	context.fillStyle = "#0077ff";
+
+	var larg = 200;
+	var haut = 100;
+
+	myRect(CW/2-(larg/2), CH/2-(haut/2), larg, haut);
+}
+
+
+function goRond(){
+
+	//demi cercle
+	myArc(CW/2, CH/2, 150, 0, Math.PI*2, true,"#0077ff");
+
+	context.translate(CW/2,CH/2);
+
+	setInterval("bl()", 100);
+
+
+}
+
+function bl(){
+	// if (i < 8) { i++; } else { i = 0;}
+j++;
+
+	var r = Math.floor(Math.random() * 255);
+	var v = Math.floor(Math.random() * 255);
+	var b = Math.floor(Math.random() * 255);
+	// color = rgb("+r+","+v+","+b+");
+	color = "rgb("+r+","+v+","+b+")";
+
+
+//	for (var i = 0; i < j; i++) {
+		// if (j < 8) {
+			context.rotate(Math.PI*2 / (j));
+			myArc(0, 50, 10, Math.PI*2, 0,  false, color);
+		// }
+//	}
+}
 
 //animation pourri
 function b(){
@@ -74,22 +117,3 @@ function damier(){
 	}
 	
 }
-
-
-//fonction createur de ligne
-function myLine(fromX, fromY, toX, toY, Color){
-
-	context.strokeStyle = Color;
-
-	context.beginPath();
-
-	context.moveTo(fromX, fromY);
-
-	context.lineTo(toX, toY);
-
-	context.closePath();
-
-	context.stroke();
-
-}
-

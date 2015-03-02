@@ -3,7 +3,7 @@
 */
 ?>
 <style>
-	canvas{ background-color: black;}
+	/*canvas{ background-color: black;}*/
 </style>
 <section class="gauche"><canvas id="canvasor" height="400" width="400" ></canvas></section>
 <?php

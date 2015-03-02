@@ -4,6 +4,8 @@
 <title>demo PiHiPi</title>
 <link rel="stylesheet" href="css/normalize.css"/>
 <link rel="stylesheet" href="css/default.css"/>
+<script src="js/object.js"></script>
+<script src="js/myBiblio.js"></script>
 <!-- <script src="js/form.js"></script> -->
 <!-- <script src="js/fraisomatic.js"></script> -->
 <!-- <script src="js/ajax.js"></script> -->
