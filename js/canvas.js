@@ -18,18 +18,20 @@ function init(){
 	context.fillStyle = "#0077ff";
 
 	//trait
-
 	context.lineWidth = 1;
 
 	CW = canvas.height;
 	CH = canvas.width;
 
 	// action();
-damier();
+	damier();
+
+
 	//appel l'animation pourrri
 	//setInterval("b()", 20);
 }
 
+//affiche un riticule
 function action(){
 	myLine(0, CH/2, CW, CH/2, "#E52325");
 	myLine(CW/2 ,0, CW/2, CH, "#E52325");
@@ -49,6 +51,7 @@ x++;
 	
 }
 
+//affiche a damier 
 function damier(){
 
 	myLine(0, CH/2, CW, CH/2, "#E52325");
@@ -57,13 +60,15 @@ function damier(){
 	var step = 100;
 	var nbRepeat = CH/step;
 
+	//dessine les lignes verticale
 	for (var i = 0; i<nbRepeat; i++) {
-		myLine(0, 0+step*i, CW, 0+step*i, "#FEE529");
+		myLine(0, 0+step*i, CW, 0+step*i, "#2EB7ED");
 	}
 
 	var step = 50;
 	var nbRepeat = CW/step;
 
+	//dessine les lignes horizontal
 	for (var i = 0; i<nbRepeat; i++) {
 		myLine(0+step*i, 0, 0+step*i, CW,  "#FEE529");
 	}
@@ -71,7 +76,7 @@ function damier(){
 }
 
 
-
+//fonction createur de ligne
 function myLine(fromX, fromY, toX, toY, Color){
 
 	context.strokeStyle = Color;
