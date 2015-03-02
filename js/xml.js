@@ -9,6 +9,9 @@ function init(){
 	loadFichierXml();
 }
 
+var path = "/galeries/";
+var catArray = ["art_abstrait", "villes","paysages_deserts"]
+
 function loadFichierXml(){
 
 	console.log('fichier xml');
@@ -45,7 +48,15 @@ function loadFichierXml(){
 				var legende = nodes[i].getElementsByTagName('legende')[0].firstChild.nodeValue;
 
 				document.getElementById('result').innerHTML += fichier + " " + legende + " " + attId + " " + attCategorie + "</br></br>";
+
+				// var src = path + catArray[attCategorie] + "/" + fichier;
+
+				// console.log(src);
+
+
+				
 			}
+
 
 		}
 		

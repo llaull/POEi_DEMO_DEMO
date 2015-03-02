@@ -1,16 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <images>
-	<image categorie="0" id_image="10">
-		<fichier>Abstract_Wallpaper1.jpg</fichier>
-		<legende>Art abstrait 1</legende>
-	</image>
-	<image categorie="0" id_image="11">
-		<fichier>AbstractBlue.jpg</fichier>
-		<legende>Art abstrait 2</legende>
-	</image>
 	<image categorie="1" id_image="3">
 		<fichier>losangeles.jpg</fichier>
-		<legende>Un concept à part ! Une légende en soi. Les gens détestent et aiment en même temps ...</legende>
+		<legende>Un concept à part ! Une légende en soi. Les gens détestent at aiment en même temps ...</legende>
 	</image>
 	<image categorie="1" id_image="4">
 		<fichier>newyork.jpg</fichier>
@@ -23,9 +15,5 @@
 	<image categorie="2" id_image="6">
 		<fichier>Sahara.jpg</fichier>
 		<legende>Le plus grand désert du monde.</legende>
-	</image>
-	<image categorie="2" id_image="7">
-		<fichier>monument_valley.jpg</fichier>
-		<legende>Lieu sacré. Terre des Navajos.</legende>
 	</image>
 </images>

@@ -9,9 +9,9 @@
 <!-- <script src="js/form.js"></script> -->
 <!-- <script src="js/fraisomatic.js"></script> -->
 <!-- <script src="js/ajax.js"></script> -->
-<!-- <script src="js/xml.js"></script> -->
+<script src="js/xml.js"></script>
 <!-- <script src="js/timer.js"></script> -->
-<script src="js/canvas.js"></script>
+<!-- <script src="js/canvas.js"></script> -->
 </head>
 <body>
 <div class="content">
