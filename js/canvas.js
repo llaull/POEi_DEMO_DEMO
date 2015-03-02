@@ -24,8 +24,10 @@ function init(){
 	CW = canvas.height;
 	CH = canvas.width;
 
-	action();
-setInterval("b()", 20);
+	// action();
+damier();
+	//appel l'animation pourrri
+	//setInterval("b()", 20);
 }
 
 function action(){
@@ -34,15 +36,40 @@ function action(){
 }
 
 
+//animation pourri
 function b(){
 x++;
 
 	myLine(0-x, CH, CW, 0+x, "#FEE529");
 	myLine(0-x, CH, CW, 0+x, "#000000");
+	myLine(0-x, CH, CW, 0+x, "#000000");
 	myLine(0-x, 0+x, CW, CH, "#2EB7ED");
+	myLine(0-x, 0+x, CW, CH, "#000000");
 	myLine(0-x, 0+x, CW, CH, "#000000");
 	
 }
+
+function damier(){
+
+	myLine(0, CH/2, CW, CH/2, "#E52325");
+	myLine(CW/2 ,0, CW/2, CH, "#E52325");
+
+	var step = 100;
+	var nbRepeat = CH/step;
+
+	for (var i = 0; i<nbRepeat; i++) {
+		myLine(0, 0+step*i, CW, 0+step*i, "#FEE529");
+	}
+
+	var step = 50;
+	var nbRepeat = CW/step;
+
+	for (var i = 0; i<nbRepeat; i++) {
+		myLine(0+step*i, 0, 0+step*i, CW,  "#FEE529");
+	}
+	
+}
+
 
 
 function myLine(fromX, fromY, toX, toY, Color){
