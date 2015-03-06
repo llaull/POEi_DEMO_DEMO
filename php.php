@@ -25,6 +25,7 @@ if (isset($_POST['paiement'])) {
 if (($login == 'laul') && ($pwd == '1234')){
 
 	$_SESSION['login'] = $login;
+	$_SESSION['AUTH'] = session_id();
 	header ('location: index_admin.php');
 
 } else {
@@ -41,7 +42,7 @@ if (($login == 'laul') && ($pwd == '1234')){
 	<legend>text</legend>
 	<p>
 		<label for="login">login</label>
-		<input type="text" id="login" name="login" value="!!">		
+		<input type="text" id="login" name="login" value="">		
 	</p>
 	<p>
 		<label for="pwd">password</label>

@@ -6,6 +6,7 @@
 //ferme la session
 session_destroy();
 
+header ('location: index.php');
 ?>
 
 <section class="gauche">bye bye admin !</section><section class="droite"><div class="log"></div></section>
